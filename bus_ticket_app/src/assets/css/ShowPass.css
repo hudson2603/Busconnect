@@ -1,0 +1,29 @@
+/* ------ Password Field Wrapper ------ */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-wrapper input {
+    width: 100%;
+    padding-right: 40px; /* Space for the eye icon */
+  }
+  
+  /* ------ Eye Icon Toggle Button ------ */
+  .ShPass {
+    position: absolute;
+    margin-left:8px ;
+    margin-top: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #323232;
+  }
+  
+  .ShPass .eye,
+  .ShPass .eye-slash {
+    transition: 0.3s ease-in-out;
+  }
+  

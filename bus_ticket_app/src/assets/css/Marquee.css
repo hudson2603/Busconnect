@@ -1,0 +1,31 @@
+/* Marquee.css */
+
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: #be3636; /* Red-500 equivalent */
+    height: 4rem; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    font-size: 1.25rem; /* text-xl */
+    font-weight: bold;
+    font-family: 'RethinkSans', sans-serif; /* replace with your font if needed */
+    color: #f0c722; /* yellow-600 equivalent */
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  

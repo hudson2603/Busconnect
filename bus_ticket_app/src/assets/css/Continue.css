@@ -1,0 +1,37 @@
+/* From Uiverse.io by mrhyddenn */ 
+.Btn {
+    background: #fff;
+    border: none;
+    padding: 10px ;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 400px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(1deg);
+    display: inline-block;
+}
+  
+  .Btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(252, 80, 80);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  .Btn:hover {
+    color: #fff;
+  }
+  
+  .Btn:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }

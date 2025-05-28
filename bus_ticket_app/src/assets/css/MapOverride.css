@@ -1,0 +1,8 @@
+.leaflet-container {
+    z-index: 1; 
+  }
+  
+  /* If you have a fixed header and need extra spacing, use a margin-top. */
+  .map-column {
+    margin-top: 78px;
+  }
